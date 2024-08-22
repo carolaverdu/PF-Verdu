@@ -1,0 +1,982 @@
+@font-face{
+    font-family: 'PPMonumentExtended';
+    src: url(../fonts/PPMonumentExtended-Black.otf);
+}
+
+/*! --------- RESET --------- */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul{
+    width: 100%;
+    display: inline-block;
+    list-style: none;
+}
+
+/*! ---------- HOME ---------- */
+/*? ; ----- NAVBAR ----- */
+
+header {
+    background-color: rgba(37, 35, 35, 0.75);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    flex-direction: row;
+    padding: 80px;
+    width: 100%
+}
+
+header .svg-logo{
+    width: 100%;
+}
+
+header li{
+    display: flex;
+    align-items: center;
+}
+
+header .nav-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+header .link {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+    color: #f8f8f8;
+    padding: 7px 8px 9px 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+header .link:hover, header .link:focus {
+    border-bottom: #f8f8f8 1px solid;
+    font-weight: bold;
+}
+
+header .link.active {
+    font-weight: bold;
+    background-color: #F3669A;
+    border-radius: 4px;
+}
+
+header .link.active:hover{
+    border: none;
+}
+
+header{
+    padding: 24px 80px 24px 80px;
+    position: fixed;
+    top: 0
+}
+
+body{
+    position: relative;
+}
+
+/*! ---------- HOME ---------- */
+/*? ; ----- HERO ----- */
+
+section.hero{
+    padding: 80px 120px 48px 120px;
+    min-height: 100vh;
+    background-image: url('../img/wave-bg.svg');
+    background-size: cover;
+}
+
+section.hero h1 span {
+    font-family: 'PPMonumentExtended';
+    font-size: 96px;
+    line-height: 96%;
+    color: #F3669A;
+}
+
+section.hero h1 {
+    font-family: 'PPMonumentExtended';
+    font-size: 96px;
+    line-height: 96%;
+    color: #252323;
+    padding: 168px 0px 8px 0px;
+}
+
+section.hero p {
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32%;
+    color: #252323;
+    padding: 8px 0px 0px 0px;
+}
+
+section.hero div.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0px 80px 0px;
+}
+
+section.hero ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+section.hero ul li a.outline {
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32%;
+    text-decoration: none;
+    padding: 8px 40px 8px 40px;
+    border-radius: 1000px;
+    border: 2px solid #0E23E3;
+    color: #0E23E3;
+    width: 228px;
+    height: 48px;
+
+}
+
+section.hero ul li a.stroke {
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32%;
+    text-decoration: none;
+    padding: 8px 40px 8px 40px;
+    border-radius: 1000px;
+    color: #f8f8f8;
+    background-color: #0E23E3;
+    width: 228px;
+    height: 48px;
+}
+
+section.hero {
+    background-color: #F8E1E9;
+}
+
+/*! ---------- HOME ---------- */
+/*? ; ----- INTRO ----- */
+
+section.intro h2 {
+    font-family: 'PPMonumentExtended';
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+    color: #f8f8f8;
+    background-color: #E30E5C;
+    padding: 80px;
+}
+
+/*! ---------- HOME ---------- */
+/*? ; ----- BEST SELLERS ----- */
+
+section.best-sellers{
+    padding: 80px;
+}
+
+section.best-sellers h2 {
+    font-family: 'PPMonumentExtended';
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    color: #F3669A;
+    padding: 0px 0px 16px 0px;
+}
+
+section.best-sellers h3{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: left;
+    color: #252323;
+    padding: 0px 0px 40px 0px;
+}
+
+section.best-sellers h4{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+    color: #252323;
+}
+
+section.best-sellers p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: #666666;
+}
+
+section.best-sellers div.top{
+    display: flex;
+    justify-content: left;
+    gap: 8px;
+    align-items: center;
+    padding: 0px 0px 16px 0px;
+}
+
+section.best-sellers img{
+    width: 400px;
+    height: 544px;
+    padding: 0px 0px 32px 0px;
+    border-radius: 8px;
+}
+
+section.best-sellers div.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    gap: 40px;
+}
+
+/*! ---------- HOME ---------- */
+/*? ; ----- ABOUT ----- */
+
+section.about{
+    min-height: 100vh;
+    background-color: #FFC0CF;
+}
+
+section.about h2{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #E30E5C;
+    padding: 80px 80px 16px 80px;
+}
+
+section.about p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    color: #E30E5C;
+    padding: 0px 80px 80px 80px;
+}
+
+/*! ---------- HOME ---------- */
+/*? ; ----- CTA ----- */
+
+section.cta{
+    background-color: #F8E1E9;
+    padding: 80px;
+}
+
+section.cta h2{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    color: #E30E5C;
+}
+
+section.cta p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    color: #E30E5C;
+    padding: 0px 0px 48px 0px;
+}
+
+section.cta ul li a.outline {
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32%;
+    text-decoration: none;
+    color: #0E23E3;
+    width: 228px;
+    height: 48px;
+    padding: 8px 40px 8px 40px;
+    border-radius: 1000px;
+    border: 2px solid #0E23E3;
+    color: #0E23E3;
+}
+
+section.cta ul li a.stroke {
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32%;
+    text-decoration: none;
+    padding: 8px 40px 8px 40px;
+    border-radius: 1000px;
+    width: 228px;
+    height: 48px;
+    color: #f8f8f8;
+    background-color: #0E23E3;
+}
+
+section.cta ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/*! ---------- FOOTER ---------- */
+/*? ; ----- FOOTER ----- */
+
+footer{
+    background-color: #252323;
+    padding: 120px;
+}
+
+footer .footer-logo{
+    width: 150px;
+    height: 48px;
+}
+
+footer ul.internal-container{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    width: 100%;
+    padding: 0px 0px 40px 0px;
+    border-bottom: 1px solid #F8f8f8;
+}
+
+footer ul li a.internal{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 32%;
+    text-decoration: none;
+    text-align: right;
+    padding: 8px 8px 16px 8px;
+    display: block;
+    color: #f8f8f8;
+}
+
+footer li.logo-container{
+    width: 100%;
+}
+
+footer ul.external-container li{
+    display: flex;
+    align-items: end;
+}
+
+footer ul li a.external{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 32%;
+    text-decoration: none;
+    text-align: right;
+    padding: 8px 8px 16px 8px;
+    display: inline-block;
+    color: #f8f8f8;
+}
+
+footer ul.external-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+}
+
+footer div.credits{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 21%;
+    text-decoration: none;
+    color: #FFC0CF;
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0px 0px 0px;
+}
+
+/*! ---------- ABOUT ---------- */
+/*? ; ----- HERO ----- */
+
+section.hero-about img{
+    width: 100%;
+    max-width: 100vw;
+    background-image: url('../img/kimandkata.jpg');
+    background-size: cover;
+}
+
+section.about-about{
+    background-color: #F8E1E9;
+}
+
+section.about-about h1{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    padding: 80px 80px 16px 80px;
+    color: #E30E5C;
+}
+
+section.about-about p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 80px 80px 80px;
+    color: #E30E5C;
+}
+
+/*! ---------- ABOUT ---------- */
+/*? ; ----- FIND US ----- */
+
+section.find-us{
+    padding: 80px;
+}
+
+section.find-us h2 {
+    font-family: 'PPMonumentExtended';
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    padding: 0px 0px 16px 0px;
+    color: #F3669A;
+}
+
+section.find-us p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: left;
+    padding: 0px 0px 40px 0px;
+    color: #252323;
+}
+
+section.find-us div.stores img{
+    width: 620px;
+    height: 480px;
+}
+
+section.cta h2{
+    padding: 48px;
+}
+
+/*! ---------- CONTACT ---------- */
+/*? ; ----- HERO ----- */
+
+section.hero-contact{
+    padding: 400px 80px 80px 80px;
+}
+
+section.hero-contact div.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+section.hero-contact svg.noodle-svg{
+    display: block;
+    margin: 0 auto;
+    margin-top: 88px;
+}
+
+section.hero-contact h1{
+        font-family: 'PPMonumentExtended';
+        font-size: 64px;
+        line-height: 56px;
+        text-align: center;
+        padding: 40px 0px 24px 0px;
+        color: #E30E5C;
+    }
+
+section.hero-contact h2{
+        font-family: 'PPMonumentExtended';
+        font-size: 32px;
+        line-height:40px;
+        text-align: center;
+        color: #F3669A;
+    }
+
+section.hero-contact{
+    padding: 80px 120px 48px 120px;
+    min-height: 100vh;
+    background-image: url('../img/wave-bg.svg');
+    background-size: cover;
+    }
+
+section.reach-out div.p-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 100vw;
+}
+
+section.reach-out div.p-boxes p.dietary {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    background-color: #f3669a;
+    color: #F8f8f8;
+}
+
+section.reach-out div.p-boxes p.party {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    background-color: #E30E5C;
+    color: #f8f8f8;
+}
+
+section.reach-out div.p-boxes p.flavour {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    background-color: #910035;
+    color: #F8E1E9;
+}
+
+section.reach-out div.p-boxes p.hi {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+    background-color: #420018;
+    color: #F8E1E9;
+}
+
+/*! ---------- CONTACT ---------- */
+/*? ; ----- REACH OUT ----- */
+
+section.reach-out h2{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    line-height:40px;
+    text-align: center;
+    color: #E30E5C;
+    background-color: #f8f8f8;
+    padding: 80px;
+}
+
+section.reach-out p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    padding: 40px 0px;
+    display: inline-block;
+    color: #f8f8f8;
+}
+
+section.reach-out p.dietary{
+    background-color: #F3669A;
+}
+
+section.reach-out p.party{
+    background-color: #E30E5C;
+}
+
+section.reach-out p.flavour{
+    background-color: #910035
+}
+
+section.reach-out p.hi{
+    background-color: #420018
+}
+
+/*! ---------- CONTACT ---------- */
+/*? ; ----- INFO ----- */
+
+section.info{
+    padding: 80px;
+    background-color: #F8E1E9
+}
+
+section.info p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 0px 48px 0px;
+    color: #F3669A
+}
+
+section.info a.stroke{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 32%;
+    text-decoration: none;
+    padding: 8px 40px 8px 40px;
+    border-radius: 1000px;
+    color: #f8f8f8;
+    background-color: #0E23E3;
+    width: 276px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*! ---------- MENU ---------- */
+/*? ; ----- HEADING ----- */
+
+section.menu h1{
+    font-family: 'PPMonumentExtended';
+    font-size: 64px;
+    line-height: 56px;
+    text-align: center;
+    color: #f8f8f8;
+    padding: 168px 80px 80px 80px;
+    background-color: #E30E5C;
+}
+
+/*! ---------- MENU ---------- */
+/*? ; ----- NOODLES AND DRINKS ----- */
+
+section.menu-heading{
+    background-color: #f8f8f8;
+    padding: 80px;
+}
+
+section.menu-heading h2{
+    font-family: 'PPMonumentExtended';
+    font-size: 64px;
+    line-height: 56px;
+    text-align: left;
+    padding: 0px 0px 40px 0px;
+    color: #F3669A;
+}
+section.menu-heading ul.description img{
+    height: 544px;
+    width: 400px;
+    padding: 0px 0px 32px 0px;
+    aspect-ratio: 9/7;
+}
+
+section.menu-heading div.card-txt-top{
+    display: flex;
+    justify-content: left;
+    gap: 8px;
+    align-items: center;
+    padding: 32px 0px 16px 0px;
+}
+
+section.menu-heading img{
+    width: 400px;
+    height: 544px;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+section.menu-heading ul.menu-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: calc(3 * 400px + 2 * 40px);
+}
+
+section.menu-heading ul.menu-description li {
+    width: 400px;
+}
+
+section.menu-heading ul.menu-description h3{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    line-height:40px;
+    text-align: left;
+    color: #252323;
+}
+
+section.menu-heading ul.menu-description p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    padding: 0px;
+    color: #666666;
+}
+
+/*! ---------- COMBOS ---------- */
+/*? ; ----- COMBOS ----- */
+
+section.menu-heading ul.combo-description h3{
+    font-family: 'PPMonumentExtended';
+    font-size: 32px;
+    line-height:40px;
+    text-align: left;
+    color: #252323;
+}
+
+section.menu-heading ul.combo-description p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    padding: 0px 0px 80px 0px;
+    color: #666666;
+}
+
+section.menu-heading ul.combo-description img{
+    width: 1280px;
+    height: 977px;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+
+/*? ; -------------------------------------- MEDIA QUERIES --------------------------------- ----- */
+/*? ; -------------------------------------- CONTACT RESPONSIVE --------------------------------- ----- */
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    header .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .link {
+        font-size: 14px;
+    }
+
+    section.hero-contact {
+        padding: 200px 40px 40px 40px;
+    }
+
+    section.hero-contact h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    section.hero-contact h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    section.reach-out div.p-boxes {
+        display: block;
+        width: 100%;
+    }
+
+    section.reach-out div.p-boxes p {
+        width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 26px;
+        line-height: 24px;
+        box-sizing: border-box;
+    }
+
+    section.info p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    section.info a.stroke {
+        width: 100%;
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 60px;
+    }
+
+    footer ul.internal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul.external-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div.credits {
+        flex-direction: column;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer ul.internal-container,
+    footer ul.external-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer ul.internal-container li,
+    footer ul.external-container li {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer ul li a.internal{
+        text-align: left;
+    }
+
+    footer .logo-container {
+        margin-bottom: 20px;
+    }
+
+    footer div.credits {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    footer div.credits p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    header {
+        padding: 24px;
+    }
+
+    section.hero-contact {
+        padding: 300px 60px 60px 60px;
+    }
+
+    section.hero-contact h1 {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    section.hero-contact h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    section.reach-out div.p-boxes p {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    section.info p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    section.info a.stroke {
+        width: 100%;
+        padding: 8px 30px;
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 80px;
+    }
+
+    footer ul.internal-container {
+        gap: 15px;
+    }
+
+    footer ul.external-container {
+        gap: 15px;
+    }
+
+    footer div.credits {
+        padding-top: 80px;
+        text-align: center;
+    }
+}
+
+/*? ; -------------------------------------- ABOUT RESPONSIVE --------------------------------- ----- */
+@media (max-width: 600px) {
+    header .svg-logo {
+        text-align: center;
+    }
+    header .link {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    section.hero-about img {
+        height: auto;
+        object-fit: cover;
+    }
+    section.find-us div.stores img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+    section.about-about h1, section.about-about p,
+    section.find-us h2, section.find-us p,
+    section.cta h2 {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 16px;
+    }
+    section.cta ul li a {
+        width: 100%;
+        padding: 12px 20px;
+    }
+    section.cta ul {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    section.about-about, section.find-us, section.cta {
+        padding: 20px 10px;
+    }
+    section.find-us div.stores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    section.about-about h1, section.about-about p,
+    section.find-us h2, section.find-us p,
+    section.cta h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    section.hero-about, section.about-about, section.find-us, section.cta {
+        padding: 40px 20px;
+    }
+}
