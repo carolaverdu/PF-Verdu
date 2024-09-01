@@ -85,10 +85,12 @@ body{
 /*? ; ----- HERO ----- */
 
 section.hero{
-    padding: 80px 120px 48px 120px;
+    padding: 80px 120px 0px 120px;
     min-height: 100vh;
     background-image: url('../img/wave-bg.svg');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 section.hero h1 span {
@@ -118,7 +120,12 @@ section.hero div.main-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 0px 80px 0px;
+    padding: 80px 80px 80px 80px;
+    width: 100%;
+    flex: 1;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.hero ul{
@@ -126,6 +133,7 @@ section.hero ul{
     justify-content: center;
     gap: 20px;
     width: 100%;
+    padding-bottom: 8%;
 }
 
 section.hero ul li a.outline {
@@ -177,6 +185,9 @@ section.intro h2 {
 
 section.best-sellers{
     padding: 80px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.best-sellers h2 {
@@ -208,7 +219,7 @@ section.best-sellers h4{
 
 section.best-sellers p{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 26px;
     text-align: left;
@@ -226,8 +237,8 @@ section.best-sellers div.top{
 section.best-sellers img{
     width: 400px;
     height: 544px;
-    padding: 0px 0px 32px 0px;
     border-radius: 8px;
+    margin-bottom: 32px;
 }
 
 section.best-sellers div.cards{
@@ -243,7 +254,7 @@ section.best-sellers div.cards{
 
 section.about{
     min-height: 100vh;
-    background-color: #FFC0CF;
+    background-color: #F8E1E9;
 }
 
 section.about h2{
@@ -253,6 +264,9 @@ section.about h2{
     text-align: center;
     color: #E30E5C;
     padding: 80px 80px 16px 80px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.about p{
@@ -263,6 +277,9 @@ section.about p{
     text-align: center;
     color: #E30E5C;
     padding: 0px 80px 80px 80px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*! ---------- HOME ---------- */
@@ -277,7 +294,7 @@ section.cta h2{
     font-family: 'PPMonumentExtended';
     font-size: 32px;
     text-align: center;
-    padding: 0px 0px 0px 0px;
+    padding-bottom: 8px;
     color: #E30E5C;
 }
 
@@ -288,7 +305,7 @@ section.cta p{
     line-height: 40px;
     text-align: center;
     color: #E30E5C;
-    padding: 0px 0px 48px 0px;
+    padding-bottom: 48px;
 }
 
 section.cta ul li a.outline {
@@ -460,10 +477,6 @@ section.find-us p{
 section.find-us div.stores img{
     width: 620px;
     height: 480px;
-}
-
-section.cta h2{
-    padding: 48px;
 }
 
 /*! ---------- CONTACT ---------- */
