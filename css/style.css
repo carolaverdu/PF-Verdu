@@ -759,11 +759,11 @@ section.menu-heading ul.menu-description {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
-    width: calc(3 * 400px + 2 * 40px);
 }
 
 section.menu-heading ul.menu-description li {
     width: 400px;
+    width: calc(33.33% - 40px * 2);
 }
 
 section.menu-heading ul.menu-description h3{
