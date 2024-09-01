@@ -94,9 +94,6 @@ section.hero{
 }
 
 section.hero h1 span {
-    font-family: 'PPMonumentExtended';
-    font-size: 96px;
-    line-height: 96%;
     color: #F3669A;
 }
 
@@ -111,7 +108,7 @@ section.hero h1 {
 section.hero p {
     font-family:  Helvetica, Arial, sans-serif;
     font-size: 24px;
-    line-height: 32%;
+    line-height: 1;
     color: #252323;
     padding: 8px 0px 0px 0px;
 }
@@ -191,7 +188,6 @@ section.intro h2 {
 
 section.best-sellers{
     padding: 80px;
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -241,19 +237,17 @@ section.best-sellers div.top{
 }
 
 section.best-sellers img{
-    width: 400px;
-    height: 544px;
+    width: 100%;
+    max-width: 100%;
     border-radius: 8px;
     margin-bottom: 32px;
 }
 
-section.best-sellers div.cards{
+/* section.best-sellers div.cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 400px;
-    gap: 40px;
-}
+} */
 
 /*! ---------- HOME ---------- */
 /*? ; ----- ABOUT ----- */
@@ -828,6 +822,16 @@ section.menu-heading ul.combo-description img{
         padding: 16px;
     }
 
+section.hero h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+section.hero svg{
+    height: 240px;
+    width: auto;
+}
+
     header .nav-container {
         flex-direction: column;
         gap: 10px;
@@ -987,7 +991,7 @@ section.menu-heading ul.combo-description img{
 }
 
 /*? ; -------------------------------------- ABOUT RESPONSIVE --------------------------------- ----- */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header .svg-logo {
         text-align: center;
     }
@@ -995,6 +999,25 @@ section.menu-heading ul.combo-description img{
         font-size: 14px;
         padding: 10px 0;
     }
+    section.hero{
+        padding: 32px 16px 32px 16px;
+    }
+    section.hero ul{
+        padding-left: 0;
+    }
+    
+    a.outline {
+        max-width: 242px;
+        min-width: 242px;
+        margin: 0 auto;
+    }
+    
+    a.stroke {
+        max-width: 242px;
+        min-width: 242px;
+        margin: 0 auto;
+    }
+
     section.hero-about img {
         height: auto;
         object-fit: cover;
