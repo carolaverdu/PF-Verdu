@@ -136,21 +136,24 @@ section.hero ul{
     padding-bottom: 8%;
 }
 
-section.hero ul li a.outline {
+a.outline {
     font-family:  Helvetica, Arial, sans-serif;
     font-size: 24px;
     line-height: 32%;
     text-decoration: none;
     padding: 8px 40px 8px 40px;
     border-radius: 1000px;
-    border: 2px solid #0E23E3;
+    box-sizing: border-box;
+    outline: 2px solid #0E23E3;
     color: #0E23E3;
-    width: 228px;
+    min-width: 228px;
     height: 48px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-section.hero ul li a.stroke {
+a.stroke {
     font-family:  Helvetica, Arial, sans-serif;
     font-size: 24px;
     line-height: 32%;
@@ -159,8 +162,11 @@ section.hero ul li a.stroke {
     border-radius: 1000px;
     color: #f8f8f8;
     background-color: #0E23E3;
-    width: 228px;
+    min-width: 228px;
     height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.hero {
@@ -282,6 +288,10 @@ section.about p{
     margin-right: auto;
 }
 
+section.about img{
+    width: 100%;
+}
+
 /*! ---------- HOME ---------- */
 /*? ; ----- CTA ----- */
 
@@ -294,7 +304,7 @@ section.cta h2{
     font-family: 'PPMonumentExtended';
     font-size: 32px;
     text-align: center;
-    padding-bottom: 8px;
+    padding-bottom: 32px;
     color: #E30E5C;
 }
 
@@ -308,32 +318,38 @@ section.cta p{
     padding-bottom: 48px;
 }
 
-section.cta ul li a.outline {
+/* section.cta ul li a.outline {
     font-family:  Helvetica, Arial, sans-serif;
     font-size: 24px;
     line-height: 32%;
     text-decoration: none;
     color: #0E23E3;
-    width: 228px;
-    height: 48px;
     padding: 8px 40px 8px 40px;
     border-radius: 1000px;
     border: 2px solid #0E23E3;
     color: #0E23E3;
-}
+    min-width: 228px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
-section.cta ul li a.stroke {
+/* section.cta ul li a.stroke {
     font-family:  Helvetica, Arial, sans-serif;
     font-size: 24px;
     line-height: 32%;
     text-decoration: none;
     padding: 8px 40px 8px 40px;
     border-radius: 1000px;
-    width: 228px;
-    height: 48px;
     color: #f8f8f8;
     background-color: #0E23E3;
-}
+    min-width: 228px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 section.cta ul{
     display: flex;
@@ -421,8 +437,10 @@ footer div.credits{
 section.hero-about img{
     width: 100%;
     max-width: 100vw;
-    background-image: url('../img/kimandkata.jpg');
-    background-size: cover;
+}
+
+section.hero-about{
+    display: flex;
 }
 
 section.about-about{
@@ -446,6 +464,9 @@ section.about-about p{
     text-align: center;
     padding: 0px 80px 80px 80px;
     color: #E30E5C;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*! ---------- ABOUT ---------- */
@@ -453,6 +474,9 @@ section.about-about p{
 
 section.find-us{
     padding: 80px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.find-us h2 {
@@ -460,8 +484,11 @@ section.find-us h2 {
     font-size: 48px;
     line-height: 48px;
     text-align: left;
-    padding: 0px 0px 16px 0px;
     color: #F3669A;
+    padding: 0px 0px 16px 0px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.find-us p{
@@ -483,8 +510,14 @@ section.find-us div.stores img{
 /*? ; ----- HERO ----- */
 
 section.hero-contact{
-    padding: 400px 80px 80px 80px;
-}
+    padding: 80px 120px 120px 120px;
+    min-height: 100vh;
+    background-image: url('../img/wave-bg.svg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
 section.hero-contact div.hero-container{
     display: flex;
@@ -506,6 +539,9 @@ section.hero-contact h1{
         text-align: center;
         padding: 40px 0px 24px 0px;
         color: #E30E5C;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 section.hero-contact h2{
@@ -514,13 +550,9 @@ section.hero-contact h2{
         line-height:40px;
         text-align: center;
         color: #F3669A;
-    }
-
-section.hero-contact{
-    padding: 80px 120px 48px 120px;
-    min-height: 100vh;
-    background-image: url('../img/wave-bg.svg');
-    background-size: cover;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 section.reach-out div.p-boxes{
@@ -637,7 +669,10 @@ section.info p{
     line-height: 40px;
     text-align: center;
     padding: 0px 0px 48px 0px;
-    color: #F3669A
+    color: #F3669A;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.info a.stroke{
@@ -680,6 +715,12 @@ section.menu-heading{
     padding: 80px;
 }
 
+div.menu-container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section.menu-heading h2{
     font-family: 'PPMonumentExtended';
     font-size: 64px;
@@ -687,6 +728,9 @@ section.menu-heading h2{
     text-align: left;
     padding: 0px 0px 40px 0px;
     color: #F3669A;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 section.menu-heading ul.description img{
     height: 544px;
@@ -743,6 +787,12 @@ section.menu-heading ul.menu-description p{
 /*! ---------- COMBOS ---------- */
 /*? ; ----- COMBOS ----- */
 
+section.menu-heading ul{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 section.menu-heading ul.combo-description h3{
     font-family: 'PPMonumentExtended';
     font-size: 32px;
@@ -762,12 +812,12 @@ section.menu-heading ul.combo-description p{
 }
 
 section.menu-heading ul.combo-description img{
-    width: 1280px;
-    height: 977px;
+    width: 1440px;
+    max-width: 100%;
+    height: auto;
     padding: 0px;
     border-radius: 8px;
 }
-
 
 /*? ; -------------------------------------- MEDIA QUERIES --------------------------------- ----- */
 /*? ; -------------------------------------- CONTACT RESPONSIVE --------------------------------- ----- */
