@@ -99,7 +99,7 @@ section.hero h1 span {
 
 section.hero h1 {
     font-family: 'PPMonumentExtended';
-    font-size: 96px;
+    font-size: 80px;
     line-height: 96%;
     color: #252323;
     padding: 168px 0px 8px 0px;
@@ -176,7 +176,7 @@ section.hero {
 section.intro h2 {
     font-family: 'PPMonumentExtended';
     font-size: 64px;
-    line-height: 56px;
+    line-height: 1;
     text-align: center;
     color: #f8f8f8;
     background-color: #E30E5C;
@@ -822,6 +822,18 @@ section.menu-heading ul.combo-description img{
         padding: 16px;
     }
 
+section.hero{
+    min-height: 100vh;
+}
+
+nav{
+    display: none;
+}
+
+    section.hero div.main-container{
+    padding: 0px;
+}
+
 section.hero h1 {
         font-size: 40px;
         line-height: 1;
@@ -840,6 +852,74 @@ section.hero svg{
     header .link {
         font-size: 14px;
     }
+
+section.hero h1{
+    font-size: 38px;
+    padding: 0px;
+}
+
+section.hero svg{
+    margin: 0px 0px 40px 0px;
+}
+
+section.intro h2{
+    font-size: 32px;
+    line-height: 1;
+    padding: 64px 20px 64px 20px;
+}
+
+section.best-sellers h2 {
+    font-size: 28px;
+    line-height: 1;
+}
+
+section.best-sellers h3 {
+    font-size: 24px;
+    line-height: 1;
+}
+
+section.about{
+    min-height: 0
+}
+
+section.about div{
+    padding: 64px 20px 64px 20px;
+}
+
+section.about h2{
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+section.about p{
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+}
+
+section.cta{
+    padding: 0;
+}
+
+section.cta h2{
+    font-size: 24px;
+    line-height: 1;
+    padding: 64px 20px 24px 20px;
+}
+
+section.cta p{
+    font-size: 24px;
+    line-height: 1;
+    padding: 16px 20px 32px 20px;
+}
+
+section.cta ul{
+    padding: 0px 0px 64px 0px;
+    gap: 16px;
+    margin: 0;
+}
 
     section.hero-contact {
         padding: 200px 40px 40px 40px;
@@ -878,6 +958,19 @@ section.hero svg{
         width: 100%;
         padding: 8px 20px;
         font-size: 20px;
+    }
+
+    section.about-about{
+        padding: 64px 20px 64px 20px;
+    }
+
+    section.about-about h1{
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    section.about-about p{
+        padding: 0;
     }
 
     footer {
@@ -1000,7 +1093,7 @@ section.hero svg{
         padding: 10px 0;
     }
     section.hero{
-        padding: 32px 16px 32px 16px;
+        padding: 170px 16px 32px 16px;
     }
     section.hero ul{
         padding-left: 0;
@@ -1027,26 +1120,22 @@ section.hero svg{
         height: auto;
         margin-bottom: 16px;
     }
+
     section.about-about h1, section.about-about p,
-    section.find-us h2, section.find-us p,
-    section.cta h2 {
+    section.find-us h2, section.find-us p {
         font-size: 24px;
         line-height: 32px;
-        padding: 16px;
     }
     section.cta ul li a {
         width: 100%;
         padding: 12px 20px;
     }
     section.cta ul {
-        padding-top: 20px;
-        padding-bottom: 20px;
         flex-direction: column;
-        gap: 40px;
         align-items: center;
     }
-    section.about-about, section.find-us, section.cta {
-        padding: 20px 10px;
+    section.find-us {
+        padding: 32px 20px;
     }
     section.find-us div.stores {
         display: flex;
@@ -1057,12 +1146,11 @@ section.hero svg{
 
 @media (min-width: 601px) and (max-width: 992px) {
     section.about-about h1, section.about-about p,
-    section.find-us h2, section.find-us p,
-    section.cta h2 {
-        font-size: 28px;
-        line-height: 36px;
+    section.find-us h2, section.find-us p {
+        font-size: 24px;
+        line-height: 1;
     }
-    section.hero-about, section.about-about, section.find-us, section.cta {
+    section.hero-about, section.find-us {
         padding: 40px 20px;
     }
 }
