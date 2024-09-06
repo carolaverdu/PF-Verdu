@@ -922,17 +922,23 @@ section.cta ul{
 }
 
     section.hero-contact {
-        padding: 200px 40px 40px 40px;
+        padding: 64px 20px 64px 20px;
     }
 
     section.hero-contact h1 {
-        font-size: 48px;
-        line-height: 52px;
+        font-size: 32px;
+        line-height: 1;
     }
 
     section.hero-contact h2 {
         font-size: 24px;
         line-height: 32px;
+    }
+
+    section.hero-contact svg.noodle-svg{
+        max-height: 160px;
+        width: auto;
+        margin-top: 132px;
     }
 
     section.reach-out div.p-boxes {
@@ -971,6 +977,36 @@ section.cta ul{
 
     section.about-about p{
         padding: 0;
+    }
+
+    section.reach-out h2{
+        padding: 64px 20px 64px 20px;
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    section.reach-out div.p-boxes p.dietary {
+        font-size: 20px;
+        padding: 40px;
+    }
+    
+    section.reach-out div.p-boxes p.party {
+        font-size: 20px;
+        padding: 40px;
+    }
+    
+    section.reach-out div.p-boxes p.flavour {
+        font-size: 20px;
+        padding: 32px;
+    }
+    
+    section.reach-out div.p-boxes p.hi {
+        font-size: 20px;
+        padding: 32px;
+    }
+
+    section.info{
+        padding: 64px 20px 64px 20px;
     }
 
     footer {
@@ -1036,12 +1072,13 @@ section.cta ul{
     }
 
     section.hero-contact {
-        padding: 300px 60px 60px 60px;
+        padding: 64px 20px 64px 24px;
+        min-height: 100vh;
     }
 
     section.hero-contact h1 {
-        font-size: 56px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 1;
     }
 
     section.hero-contact h2 {
