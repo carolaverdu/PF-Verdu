@@ -26,7 +26,14 @@ header {
     width: 100%;
     flex-direction: row;
     padding: 80px;
-    width: 100%
+    width: 100%;
+    max-height: 70px;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+header:hover{
+    max-height: 100%;
 }
 
 header .svg-logo{
@@ -42,6 +49,7 @@ header .nav-container{
     display: flex;
     gap: 20px;
     width: 100%;
+    padding: 0;
 }
 
 header .link {
@@ -797,11 +805,11 @@ section.menu-heading ul.combo-description h3{
 
 section.menu-heading ul.combo-description p{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 20px;
     text-align: left;
-    padding: 0px 0px 80px 0px;
+    padding: 0px 0px 40px 0px;
     color: #666666;
 }
 
@@ -826,8 +834,9 @@ section.hero{
     min-height: 100vh;
 }
 
-nav{
-    display: none;
+    header ul li.svg-logo{
+    display: flex;
+    justify-content: space-between;
 }
 
     section.hero div.main-container{
@@ -868,14 +877,28 @@ section.intro h2{
     padding: 64px 20px 64px 20px;
 }
 
+section.best-sellers{
+    padding: 64px 16px 64px 16px;
+}
+
 section.best-sellers h2 {
     font-size: 28px;
     line-height: 1;
+    padding: 0px 0px 8px 0px;
 }
 
 section.best-sellers h3 {
     font-size: 24px;
     line-height: 1;
+    padding: 0px 0px 32px 0px;
+}
+
+section.best-sellers img{
+    margin: 0px 0px 24px 0px;
+}
+
+section.best-sellers div.top{
+    padding: 0px 0px 8px 0px;
 }
 
 section.about{
@@ -907,12 +930,14 @@ section.cta h2{
     font-size: 24px;
     line-height: 1;
     padding: 64px 20px 24px 20px;
+    margin: 0;
 }
 
 section.cta p{
     font-size: 24px;
     line-height: 1;
     padding: 16px 20px 32px 20px;
+    margin: 0;
 }
 
 section.cta ul{
@@ -1007,6 +1032,60 @@ section.cta ul{
 
     section.info{
         padding: 64px 20px 64px 20px;
+    }
+
+    section.menu h1 {
+        font-size: 32px;
+        line-height: 1;
+        padding: 152px 40px 64px 40px;
+    }
+
+    section.menu-heading {
+        padding: 40px 20px 40px 20px;
+    }
+
+    section.menu-heading h2{
+        font-size: 32px;
+        line-height: 56px;
+        padding: 0px 0px 40px 0px;
+    }
+
+    section.menu-heading ul.menu-description p{
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    section.menu-heading ul.menu-description h3{
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    section.menu-heading div.card-txt-top{
+        padding: 16px 0px 8px 0px;
+    }
+
+    section.menu-heading ul.menu-description li{
+        width: 100%;
+    }
+
+    section.menu-heading ul.menu-description{
+        flex-direction: column;
+    }
+
+    section.menu-heading img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    section.menu-heading ul.combo-description h3{
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    section.menu-heading ul.combo-description p{
+        font-size: 16px;
+        line-height: 20px;
     }
 
     footer {
@@ -1159,10 +1238,18 @@ section.cta ul{
     }
 
     section.about-about h1, section.about-about p,
-    section.find-us h2, section.find-us p {
+    section.find-us h2 {
         font-size: 24px;
         line-height: 32px;
+        padding: 0px 0px 8px 0px;
     }
+
+    section.find-us p{
+        padding: 0px 0px 32px 0px;
+        font-size: 24px;
+        line-height: 1;
+    }
+
     section.cta ul li a {
         width: 100%;
         padding: 12px 20px;
@@ -1184,7 +1271,7 @@ section.cta ul{
 @media (min-width: 601px) and (max-width: 992px) {
     section.about-about h1, section.about-about p,
     section.find-us h2, section.find-us p {
-        font-size: 24px;
+        font-size: 28px;
         line-height: 1;
     }
     section.hero-about, section.find-us {
