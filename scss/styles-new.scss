@@ -1,0 +1,688 @@
+@font-face {
+	font-family: 'PPMonumentExtended';
+	src: url(../fonts/PPMonumentExtended-Black.otf);
+}
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+ul {
+	width: 100%;
+	display: inline-block;
+	list-style: none;
+}
+header {
+	background-color: rgba(37, 35, 35, 0.75);
+	backdrop-filter: blur(10px);
+	width: 100%;
+	flex-direction: row;
+	padding: 80px;
+	width: 100%;
+	max-height: 70px;
+	overflow: hidden;
+	transition: max-height .5s ease-in-out;
+	padding: 24px 80px 24px 80px;
+	position: fixed;
+	top: 0;
+	&:hover {
+		max-height: 100%;
+	}
+	.svg-logo {
+		width: 100%;
+	}
+	li {
+		display: flex;
+		align-items: center;
+	}
+	.nav-container {
+		display: flex;
+		gap: 20px;
+		width: 100%;
+		padding: 0;
+	}
+	.link {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		font-style: normal;
+		text-decoration: none;
+		color: #f8f8f8;
+		padding: 7px 8px 9px 8px;
+		display: flex;
+		align-items: center;
+		&.active {
+			font-weight: bold;
+			background-color: #F3669A;
+			border-radius: 4px;
+			&:hover {
+				border: none;
+			}
+		}
+	}
+}
+header .link:hover, header .link:focus {
+	border-bottom: #f8f8f8 1px solid;
+	font-weight: bold;
+}
+body {
+	position: relative;
+}
+section {
+	&.hero {
+		padding: 80px 120px 0px 120px;
+		min-height: 100vh;
+		background-image: url('../img/wave-bg.svg');
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		background-color: #F8E1E9;
+		h1 {
+			font-family: 'PPMonumentExtended';
+			font-size: 80px;
+			line-height: 96%;
+			color: #252323;
+			padding: 168px 0px 8px 0px;
+			span {
+				color: #F3669A;
+			}
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 24px;
+			line-height: 1;
+			color: #252323;
+			padding: 8px 0px 0px 0px;
+		}
+		div {
+			&.main-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 80px 80px 80px 80px;
+				width: 100%;
+				flex: 1;
+				max-width: 1440px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		ul {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			width: 100%;
+			padding-bottom: 8%;
+		}
+	}
+	&.intro {
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 64px;
+			line-height: 1;
+			text-align: center;
+			color: #f8f8f8;
+			background-color: #E30E5C;
+			padding: 80px;
+		}
+	}
+	&.best-sellers {
+		padding: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 48px;
+			line-height: 48px;
+			text-align: left;
+			color: #F3669A;
+			padding: 0px 0px 16px 0px;
+		}
+		h3 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: left;
+			color: #252323;
+			padding: 0px 0px 40px 0px;
+		}
+		h4 {
+			font-family: 'PPMonumentExtended';
+			font-size: 32px;
+			line-height: 40px;
+			text-align: left;
+			color: #252323;
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 26px;
+			text-align: left;
+			color: #666666;
+		}
+		div {
+			&.top {
+				display: flex;
+				justify-content: left;
+				gap: 8px;
+				align-items: center;
+				padding: 0px 0px 16px 0px;
+			}
+		}
+		img {
+			width: 100%;
+			max-width: 100%;
+			border-radius: 8px;
+			margin-bottom: 32px;
+		}
+	}
+	&.about {
+		min-height: 100vh;
+		background-color: #F8E1E9;
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 32px;
+			line-height: 40px;
+			text-align: center;
+			color: #E30E5C;
+			padding: 80px 80px 16px 80px;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: center;
+			color: #E30E5C;
+			padding: 0px 80px 80px 80px;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&.cta {
+		background-color: #F8E1E9;
+		padding: 80px;
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 32px;
+			text-align: center;
+			padding-bottom: 32px;
+			color: #E30E5C;
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: center;
+			color: #E30E5C;
+			padding-bottom: 48px;
+		}
+		ul {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			width: 100%;
+		}
+	}
+	&.hero-about {
+		display: flex;
+		img {
+			width: 100%;
+			max-width: 100vw;
+		}
+	}
+	&.about-about {
+		background-color: #F8E1E9;
+		h1 {
+			font-family: 'PPMonumentExtended';
+			font-size: 32px;
+			line-height: 40px;
+			text-align: center;
+			padding: 80px 80px 16px 80px;
+			color: #E30E5C;
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: center;
+			padding: 0px 80px 80px 80px;
+			color: #E30E5C;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&.find-us {
+		padding: 80px;
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 48px;
+			line-height: 48px;
+			text-align: left;
+			color: #F3669A;
+			padding: 0px 0px 16px 0px;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: left;
+			padding: 0px 0px 40px 0px;
+			color: #252323;
+		}
+		div {
+			&.stores {
+				img {
+					width: 620px;
+					height: 480px;
+				}
+			}
+		}
+	}
+	&.hero-contact {
+		padding: 80px 120px 120px 120px;
+		min-height: 100vh;
+		background-image: url('../img/wave-bg.svg');
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		div {
+			&.hero-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+			}
+		}
+		svg {
+			&.noodle-svg {
+				display: block;
+				margin: 0 auto;
+				margin-top: 88px;
+			}
+		}
+		h1 {
+			font-family: 'PPMonumentExtended';
+			font-size: 64px;
+			line-height: 56px;
+			text-align: center;
+			padding: 40px 0px 24px 0px;
+			color: #E30E5C;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 32px;
+			line-height: 40px;
+			text-align: center;
+			color: #F3669A;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&.reach-out {
+		div {
+			&.p-boxes {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0px;
+				width: 100vw;
+				p {
+					&.dietary {
+						flex: 1 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						box-sizing: border-box;
+						text-align: center;
+						padding: 40px 40px 40px 40px;
+						background-color: #f3669a;
+						color: #F8f8f8;
+					}
+					&.party {
+						flex: 1 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						box-sizing: border-box;
+						text-align: center;
+						padding: 40px 40px 40px 40px;
+						background-color: #E30E5C;
+						color: #f8f8f8;
+					}
+					&.flavour {
+						flex: 1 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						box-sizing: border-box;
+						text-align: center;
+						padding: 40px 40px 40px 40px;
+						background-color: #910035;
+						color: #F8E1E9;
+					}
+					&.hi {
+						flex: 1 1;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						box-sizing: border-box;
+						text-align: center;
+						padding: 40px 40px 40px 40px;
+						background-color: #420018;
+						color: #F8E1E9;
+					}
+				}
+			}
+		}
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 32px;
+			line-height: 40px;
+			text-align: center;
+			color: #E30E5C;
+			background-color: #f8f8f8;
+			padding: 80px;
+		}
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: center;
+			padding: 40px 0px;
+			display: inline-block;
+			color: #f8f8f8;
+			&.dietary {
+				background-color: #F3669A;
+			}
+			&.party {
+				background-color: #E30E5C;
+			}
+			&.flavour {
+				background-color: #910035;
+			}
+			&.hi {
+				background-color: #420018;
+			}
+		}
+	}
+	&.info {
+		padding: 80px;
+		background-color: #F8E1E9;
+		p {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 40px;
+			text-align: center;
+			padding: 0px 0px 48px 0px;
+			color: #F3669A;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		a {
+			&.stroke {
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 24px;
+				line-height: 32%;
+				text-decoration: none;
+				padding: 8px 40px 8px 40px;
+				border-radius: 1000px;
+				color: #f8f8f8;
+				background-color: #0E23E3;
+				width: 276px;
+				height: 48px;
+				display: block;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		}
+	}
+	&.menu {
+		h1 {
+			font-family: 'PPMonumentExtended';
+			font-size: 64px;
+			line-height: 56px;
+			text-align: center;
+			color: #f8f8f8;
+			padding: 168px 80px 80px 80px;
+			background-color: #E30E5C;
+		}
+	}
+	&.menu-heading {
+		background-color: #f8f8f8;
+		padding: 80px;
+		h2 {
+			font-family: 'PPMonumentExtended';
+			font-size: 64px;
+			line-height: 56px;
+			text-align: left;
+			padding: 0px 0px 40px 0px;
+			color: #F3669A;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		ul {
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+			&.description {
+				img {
+					height: 544px;
+					width: 400px;
+					padding: 0px 0px 32px 0px;
+					aspect-ratio: 9/7;
+				}
+			}
+			&.menu-description {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				gap: 40px;
+				li {
+					width: 400px;
+					width: calc(33.33% - 40px * 2);
+				}
+				h3 {
+					font-family: 'PPMonumentExtended';
+					font-size: 32px;
+					line-height: 40px;
+					text-align: left;
+					color: #252323;
+				}
+				p {
+					font-family: Helvetica, Arial, sans-serif;
+					font-size: 20px;
+					font-weight: 300;
+					line-height: 26px;
+					text-align: left;
+					padding: 0px;
+					color: #666666;
+				}
+			}
+			&.combo-description {
+				h3 {
+					font-family: 'PPMonumentExtended';
+					font-size: 32px;
+					line-height: 40px;
+					text-align: left;
+					color: #252323;
+				}
+				p {
+					font-family: Helvetica, Arial, sans-serif;
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 20px;
+					text-align: left;
+					padding: 0px 0px 40px 0px;
+					color: #666666;
+				}
+				img {
+					width: 1440px;
+					max-width: 100%;
+					height: auto;
+					padding: 0px;
+					border-radius: 8px;
+				}
+			}
+		}
+		div {
+			&.card-txt-top {
+				display: flex;
+				justify-content: left;
+				gap: 8px;
+				align-items: center;
+				padding: 32px 0px 16px 0px;
+			}
+		}
+		img {
+			width: 400px;
+			height: 544px;
+			padding: 0px;
+			border-radius: 8px;
+		}
+	}
+}
+a {
+	&.outline {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		line-height: 32%;
+		text-decoration: none;
+		padding: 8px 40px 8px 40px;
+		border-radius: 1000px;
+		box-sizing: border-box;
+		outline: 2px solid #0E23E3;
+		color: #0E23E3;
+		min-width: 228px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&.stroke {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		line-height: 32%;
+		text-decoration: none;
+		padding: 8px 40px 8px 40px;
+		border-radius: 1000px;
+		color: #f8f8f8;
+		background-color: #0E23E3;
+		min-width: 228px;
+		height: 48px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+footer {
+	background-color: #252323;
+	padding: 120px;
+	.footer-logo {
+		width: 150px;
+		height: 48px;
+	}
+	ul {
+		&.internal-container {
+			display: flex;
+			align-items: end;
+			gap: 20px;
+			width: 100%;
+			padding: 0px 0px 40px 0px;
+			border-bottom: 1px solid #F8f8f8;
+		}
+		li {
+			a {
+				&.internal {
+					font-family: Helvetica, Arial, sans-serif;
+					font-size: 16px;
+					line-height: 32%;
+					text-decoration: none;
+					text-align: right;
+					padding: 8px 8px 16px 8px;
+					display: block;
+					color: #f8f8f8;
+				}
+				&.external {
+					font-family: Helvetica, Arial, sans-serif;
+					font-size: 16px;
+					line-height: 32%;
+					text-decoration: none;
+					text-align: right;
+					padding: 8px 8px 16px 8px;
+					display: inline-block;
+					color: #f8f8f8;
+				}
+			}
+		}
+		&.external-container {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 20px;
+			width: 100%;
+			padding: 40px 0px 0px 0px;
+			li {
+				display: flex;
+				align-items: end;
+			}
+		}
+	}
+	li {
+		&.logo-container {
+			width: 100%;
+		}
+	}
+	div {
+		&.credits {
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			line-height: 21%;
+			text-decoration: none;
+			color: #FFC0CF;
+			display: flex;
+			justify-content: space-between;
+			padding: 200px 0px 0px 0px;
+		}
+	}
+}
+div {
+	&.menu-container {
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
