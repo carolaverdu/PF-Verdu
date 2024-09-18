@@ -5,6 +5,9 @@
     header {
         flex-direction: column;
         padding: 16px;
+        max-height: 90px;
+        overflow: hidden;
+        transition: max-height .5s ease-in-out;
     }
     
     section.hero{
@@ -453,5 +456,11 @@
     }
     section.hero-about, section.find-us {
         padding: 40px 20px;
+    }
+}
+
+@media (min-width: 601px) {
+    header .svg-logo a + svg {
+        display: none;
     }
 }
