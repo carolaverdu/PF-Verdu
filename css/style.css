@@ -5,7 +5,6 @@
     header {
         flex-direction: column;
         padding: 16px;
-        max-height: 90px;
         overflow: hidden;
         transition: max-height .5s ease-in-out;
     }

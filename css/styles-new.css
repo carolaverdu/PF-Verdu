@@ -50,7 +50,8 @@ header {
       header .link.active:hover {
         border: none; }
 
-header .link:hover, header .link:focus {
+header .link:hover,
+header .link:focus {
   border-bottom: #f8f8f8 1px solid;
   font-weight: bold; }
 
@@ -426,8 +427,8 @@ section.menu-heading {
     margin-left: auto;
     margin-right: auto; }
     section.menu-heading ul.description img {
-      height: 544px;
-      width: 400px;
+      max-width: 100%;
+      height: auto;
       padding: 0px 0px 32px 0px;
       aspect-ratio: 9/7; }
     section.menu-heading ul.menu-description {
@@ -452,6 +453,9 @@ section.menu-heading {
         text-align: left;
         padding: 0px;
         color: #666666; }
+      section.menu-heading ul.menu-description img {
+        max-width: 100%;
+        height: auto; }
     section.menu-heading ul.combo-description h3 {
       font-family: 'PPMonumentExtended';
       font-size: 32px;
@@ -622,3 +626,201 @@ section.form {
     height: 40px; }
   section.form .mail {
     display: flex; }
+
+/*? ; -------------------------------------- MEDIA QUERIES --------------------------------- ----- */
+/*? ; -------------------------------------- RESPONSIVE --------------------------------- ----- */
+section.form {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  section.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 312px; }
+  @media (max-width: 600px) {
+    section.form {
+      padding: 64px 20px; }
+      section.form h2 {
+        font-size: 24px; }
+      section.form form {
+        width: 100%; }
+        section.form form input {
+          width: 100%; } }
+
+/*? ; -------------------------------------- MAX WIDTH 600PX --------------------------------- ----- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 16px;
+    max-height: 70px;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out; }
+  section.hero {
+    min-height: 100vh; }
+    section.hero h1 {
+      font-size: 38px;
+      padding: 0; }
+    section.hero svg {
+      height: 240px;
+      margin: 0 0 40px 0; }
+    section.hero div.main-container {
+      padding: 0; }
+  header ul li.svg-logo {
+    display: flex;
+    justify-content: space-between; }
+  header .nav-container {
+    flex-direction: column;
+    gap: 10px; }
+  header .link {
+    font-size: 14px; }
+  section.intro h2 {
+    font-size: 32px;
+    line-height: 1;
+    padding: 64px 20px; }
+  section.best-sellers {
+    padding: 64px 16px; }
+    section.best-sellers h2 {
+      font-size: 28px;
+      padding: 0 0 8px 0; }
+    section.best-sellers h3 {
+      font-size: 24px;
+      padding: 0 0 32px 0; }
+    section.best-sellers img {
+      margin: 0 0 24px 0; }
+    section.best-sellers div.top {
+      padding: 0 0 8px 0; }
+  section.about {
+    min-height: 0; }
+    section.about div {
+      padding: 64px 20px; }
+    section.about h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+      line-height: 1;
+      padding: 0; }
+    section.about p {
+      font-size: 24px;
+      line-height: 1;
+      padding: 0; }
+  section.cta {
+    padding: 0; }
+    section.cta h2 {
+      font-size: 24px;
+      line-height: 1;
+      padding: 64px 20px 24px 20px; }
+    section.cta p {
+      font-size: 24px;
+      line-height: 1;
+      padding: 16px 20px 32px 20px; }
+    section.cta ul {
+      padding: 0 0 64px 0;
+      gap: 16px;
+      margin: 0;
+      flex-direction: column;
+      align-items: center; }
+      section.cta ul li a {
+        width: 100%;
+        padding: 12px 20px; }
+  section.reach-out div.p-boxes {
+    display: block;
+    width: 100%; }
+    section.reach-out div.p-boxes div.p-boxes p {
+      font-size: 20px;
+      padding: 40px; }
+    section.reach-out div.p-boxes p.dietary,
+    section.reach-out div.p-boxes p.party,
+    section.reach-out div.p-boxes p.flavour,
+    section.reach-out div.p-boxes p.hi {
+      font-size: 20px;
+      padding: 32px; }
+  section.reach-out h2 {
+    font-size: 24px;
+    padding: 64px 20px; }
+  section.menu h1 {
+    font-size: 32px;
+    padding: 152px 40px 64px 40px; }
+  footer {
+    padding: 40px 20px; }
+    footer ul.internal-container,
+    footer ul.external-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; }
+    footer div.credits {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center; }
+      footer div.credits p {
+        font-size: 14px;
+        line-height: 20px; } }
+
+/*? ; -------------------------------------- WIDTH BETWEEN 601 A 992 PX --------------------------------- ----- */
+@media (min-width: 601px) and (max-width: 992px) {
+  header {
+    padding: 24px; }
+  section.hero-contact {
+    padding: 64px 20px 64px 24px;
+    min-height: 100vh; }
+    section.hero-contact h1 {
+      font-size: 32px;
+      line-height: 1; }
+    section.hero-contact h2 {
+      font-size: 28px;
+      line-height: 36px; }
+  section.reach-out div.p-boxes p {
+    padding: 30px;
+    font-size: 20px; }
+  section.info p {
+    font-size: 28px;
+    line-height: 36px; }
+  section.info a.stroke {
+    width: 100%;
+    padding: 8px 30px;
+    font-size: 22px; }
+  footer {
+    padding: 80px; }
+    footer ul.internal-container,
+    footer ul.external-container {
+      gap: 15px; }
+    footer div.credits {
+      padding-top: 80px;
+      text-align: center; } }
+
+@media (max-width: 768px) {
+  header .svg-logo {
+    text-align: center; }
+  header .link {
+    font-size: 14px;
+    padding: 10px 0; }
+  section.hero {
+    padding: 170px 16px 32px 16px; }
+    section.hero ul {
+      padding-left: 0; }
+  a.outline,
+  a.stroke {
+    max-width: 242px;
+    min-width: 242px;
+    margin: 0 auto; }
+  section.find-us div.stores img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px; }
+  section.find-us {
+    padding: 32px 20px; }
+    section.find-us div.stores {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    section.find-us h2,
+    section.find-us p {
+      font-size: 24px;
+      padding: 0 0 32px 0;
+      line-height: 1; }
+  section.cta ul li a {
+    width: 100%;
+    padding: 12px 20px; } }

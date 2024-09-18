@@ -2,16 +2,19 @@
 	font-family: 'PPMonumentExtended';
 	src: url(../fonts/PPMonumentExtended-Black.otf);
 }
+
 * {
 	margin: 0%;
 	padding: 0%;
 	box-sizing: border-box;
 }
+
 ul {
 	width: 100%;
 	display: inline-block;
 	list-style: none;
 }
+
 header {
 	background-color: rgba(37, 35, 35, 0.75);
 	backdrop-filter: blur(10px);
@@ -22,22 +25,27 @@ header {
 	padding: 24px 80px 24px 80px;
 	position: fixed;
 	top: 0;
+
 	&:hover {
 		max-height: 100%;
 	}
+
 	.svg-logo {
 		width: 100%;
 	}
+
 	li {
 		display: flex;
 		align-items: center;
 	}
+
 	.nav-container {
 		display: flex;
 		gap: 20px;
 		width: 100%;
 		padding: 0;
 	}
+
 	.link {
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 16px;
@@ -47,23 +55,29 @@ header {
 		padding: 7px 8px 9px 8px;
 		display: flex;
 		align-items: center;
+
 		&.active {
 			font-weight: bold;
 			background-color: #F3669A;
 			border-radius: 4px;
+
 			&:hover {
 				border: none;
 			}
 		}
 	}
 }
-header .link:hover, header .link:focus {
+
+header .link:hover,
+header .link:focus {
 	border-bottom: #f8f8f8 1px solid;
 	font-weight: bold;
 }
+
 body {
 	position: relative;
 }
+
 section {
 	&.hero {
 		padding: 80px 120px 0px 120px;
@@ -73,16 +87,19 @@ section {
 		display: flex;
 		flex-direction: column;
 		background-color: #F8E1E9;
+
 		h1 {
 			font-family: 'PPMonumentExtended';
 			font-size: 80px;
 			line-height: 96%;
 			color: #252323;
 			padding: 168px 0px 8px 0px;
+
 			span {
 				color: #F3669A;
 			}
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 24px;
@@ -90,6 +107,7 @@ section {
 			color: #252323;
 			padding: 8px 0px 0px 0px;
 		}
+
 		div {
 			&.main-container {
 				display: flex;
@@ -103,6 +121,7 @@ section {
 				margin-right: auto;
 			}
 		}
+
 		ul {
 			display: flex;
 			justify-content: center;
@@ -111,6 +130,7 @@ section {
 			padding-bottom: 8%;
 		}
 	}
+
 	&.intro {
 		h2 {
 			font-family: 'PPMonumentExtended';
@@ -122,10 +142,12 @@ section {
 			padding: 80px;
 		}
 	}
+
 	&.best-sellers {
 		padding: 80px;
 		margin-left: auto;
 		margin-right: auto;
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 48px;
@@ -134,6 +156,7 @@ section {
 			color: #F3669A;
 			padding: 0px 0px 16px 0px;
 		}
+
 		h3 {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -143,6 +166,7 @@ section {
 			color: #252323;
 			padding: 0px 0px 40px 0px;
 		}
+
 		h4 {
 			font-family: 'PPMonumentExtended';
 			font-size: 32px;
@@ -150,6 +174,7 @@ section {
 			text-align: left;
 			color: #252323;
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 18px;
@@ -158,6 +183,7 @@ section {
 			text-align: left;
 			color: #666666;
 		}
+
 		div {
 			&.top {
 				display: flex;
@@ -167,6 +193,7 @@ section {
 				padding: 0px 0px 16px 0px;
 			}
 		}
+
 		img {
 			width: 100%;
 			max-width: 100%;
@@ -174,9 +201,11 @@ section {
 			margin-bottom: 32px;
 		}
 	}
+
 	&.about {
 		min-height: 100vh;
 		background-color: #F8E1E9;
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 32px;
@@ -188,6 +217,7 @@ section {
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -200,13 +230,16 @@ section {
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		img {
 			width: 100%;
 		}
 	}
+
 	&.cta {
 		background-color: #F8E1E9;
 		padding: 80px;
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 32px;
@@ -214,6 +247,7 @@ section {
 			padding-bottom: 32px;
 			color: #E30E5C;
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -223,6 +257,7 @@ section {
 			color: #E30E5C;
 			padding-bottom: 48px;
 		}
+
 		ul {
 			display: flex;
 			justify-content: center;
@@ -230,15 +265,19 @@ section {
 			width: 100%;
 		}
 	}
+
 	&.hero-about {
 		display: flex;
+
 		img {
 			width: 100%;
 			max-width: 100vw;
 		}
 	}
+
 	&.about-about {
 		background-color: #F8E1E9;
+
 		h1 {
 			font-family: 'PPMonumentExtended';
 			font-size: 32px;
@@ -247,6 +286,7 @@ section {
 			padding: 80px 80px 16px 80px;
 			color: #E30E5C;
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -260,11 +300,13 @@ section {
 			margin-right: auto;
 		}
 	}
+
 	&.find-us {
 		padding: 80px;
 		max-width: 1440px;
 		margin-left: auto;
 		margin-right: auto;
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 48px;
@@ -276,6 +318,7 @@ section {
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -285,6 +328,7 @@ section {
 			padding: 0px 0px 40px 0px;
 			color: #252323;
 		}
+
 		div {
 			&.stores {
 				img {
@@ -294,6 +338,7 @@ section {
 			}
 		}
 	}
+
 	&.hero-contact {
 		padding: 80px 120px 120px 120px;
 		min-height: 100vh;
@@ -302,6 +347,7 @@ section {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 		div {
 			&.hero-container {
 				display: flex;
@@ -310,6 +356,7 @@ section {
 				height: 100%;
 			}
 		}
+
 		svg {
 			&.noodle-svg {
 				display: block;
@@ -317,6 +364,7 @@ section {
 				margin-top: 88px;
 			}
 		}
+
 		h1 {
 			font-family: 'PPMonumentExtended';
 			font-size: 64px;
@@ -328,6 +376,7 @@ section {
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 32px;
@@ -339,6 +388,7 @@ section {
 			margin-right: auto;
 		}
 	}
+
 	&.reach-out {
 		div {
 			&.p-boxes {
@@ -346,6 +396,7 @@ section {
 				flex-wrap: wrap;
 				gap: 0px;
 				width: 100vw;
+
 				p {
 					&.dietary {
 						flex: 1 1;
@@ -359,6 +410,7 @@ section {
 						background-color: #f3669a;
 						color: #F8f8f8;
 					}
+
 					&.party {
 						flex: 1 1;
 						display: flex;
@@ -371,6 +423,7 @@ section {
 						background-color: #E30E5C;
 						color: #f8f8f8;
 					}
+
 					&.flavour {
 						flex: 1 1;
 						display: flex;
@@ -383,6 +436,7 @@ section {
 						background-color: #910035;
 						color: #F8E1E9;
 					}
+
 					&.hi {
 						flex: 1 1;
 						display: flex;
@@ -398,6 +452,7 @@ section {
 				}
 			}
 		}
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 32px;
@@ -407,6 +462,7 @@ section {
 			background-color: #f8f8f8;
 			padding: 80px;
 		}
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -416,23 +472,29 @@ section {
 			padding: 40px 0px;
 			display: inline-block;
 			color: #f8f8f8;
+
 			&.dietary {
 				background-color: #F3669A;
 			}
+
 			&.party {
 				background-color: #E30E5C;
 			}
+
 			&.flavour {
 				background-color: #910035;
 			}
+
 			&.hi {
 				background-color: #420018;
 			}
 		}
 	}
+
 	&.info {
 		padding: 80px;
 		background-color: #F8E1E9;
+
 		p {
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 32px;
@@ -445,6 +507,7 @@ section {
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		a {
 			&.stroke {
 				font-family: Helvetica, Arial, sans-serif;
@@ -466,6 +529,7 @@ section {
 			}
 		}
 	}
+
 	&.menu {
 		h1 {
 			font-family: 'PPMonumentExtended';
@@ -477,9 +541,11 @@ section {
 			background-color: #E30E5C;
 		}
 	}
+
 	&.menu-heading {
 		background-color: #f8f8f8;
 		padding: 80px;
+
 		h2 {
 			font-family: 'PPMonumentExtended';
 			font-size: 64px;
@@ -491,27 +557,32 @@ section {
 			margin-left: auto;
 			margin-right: auto;
 		}
+
 		ul {
 			max-width: 1440px;
 			margin-left: auto;
 			margin-right: auto;
+
 			&.description {
 				img {
-					height: 544px;
-					width: 400px;
+					max-width: 100%;
+					height: auto;
 					padding: 0px 0px 32px 0px;
 					aspect-ratio: 9/7;
 				}
 			}
+
 			&.menu-description {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
 				gap: 40px;
+
 				li {
 					width: 400px;
 					width: calc(33.33% - 40px * 2);
 				}
+
 				h3 {
 					font-family: 'PPMonumentExtended';
 					font-size: 32px;
@@ -519,6 +590,7 @@ section {
 					text-align: left;
 					color: #252323;
 				}
+
 				p {
 					font-family: Helvetica, Arial, sans-serif;
 					font-size: 20px;
@@ -528,7 +600,13 @@ section {
 					padding: 0px;
 					color: #666666;
 				}
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
 			}
+
 			&.combo-description {
 				h3 {
 					font-family: 'PPMonumentExtended';
@@ -537,6 +615,7 @@ section {
 					text-align: left;
 					color: #252323;
 				}
+
 				p {
 					font-family: Helvetica, Arial, sans-serif;
 					font-size: 16px;
@@ -546,6 +625,7 @@ section {
 					padding: 0px 0px 40px 0px;
 					color: #666666;
 				}
+
 				img {
 					width: 1440px;
 					max-width: 100%;
@@ -555,6 +635,7 @@ section {
 				}
 			}
 		}
+
 		div {
 			&.card-txt-top {
 				display: flex;
@@ -564,6 +645,7 @@ section {
 				padding: 32px 0px 16px 0px;
 			}
 		}
+
 		img {
 			width: 400px;
 			height: 544px;
@@ -572,6 +654,7 @@ section {
 		}
 	}
 }
+
 a {
 	&.outline {
 		font-family: Helvetica, Arial, sans-serif;
@@ -589,6 +672,7 @@ a {
 		justify-content: center;
 		align-items: center;
 	}
+
 	&.stroke {
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 24px;
@@ -605,13 +689,16 @@ a {
 		align-items: center;
 	}
 }
+
 footer {
 	background-color: #252323;
 	padding: 120px;
+
 	.footer-logo {
 		width: 150px;
 		height: 48px;
 	}
+
 	ul {
 		&.internal-container {
 			display: flex;
@@ -621,6 +708,7 @@ footer {
 			padding: 0px 0px 40px 0px;
 			border-bottom: 1px solid #F8f8f8;
 		}
+
 		li {
 			a {
 				&.internal {
@@ -633,6 +721,7 @@ footer {
 					display: block;
 					color: #f8f8f8;
 				}
+
 				&.external {
 					font-family: Helvetica, Arial, sans-serif;
 					font-size: 16px;
@@ -645,6 +734,7 @@ footer {
 				}
 			}
 		}
+
 		&.external-container {
 			display: flex;
 			align-items: center;
@@ -652,17 +742,20 @@ footer {
 			gap: 20px;
 			width: 100%;
 			padding: 40px 0px 0px 0px;
+
 			li {
 				display: flex;
 				align-items: end;
 			}
 		}
 	}
+
 	li {
 		&.logo-container {
 			width: 100%;
 		}
 	}
+
 	div {
 		&.credits {
 			font-family: Helvetica, Arial, sans-serif;
@@ -676,6 +769,7 @@ footer {
 		}
 	}
 }
+
 div {
 	&.menu-container {
 		max-width: 1440px;
@@ -690,6 +784,7 @@ section.form {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+
 	h2 {
 		font-family: 'PPMonumentExtended';
 		font-size: 32px;
@@ -697,6 +792,7 @@ section.form {
 		padding-bottom: 32px;
 		color: #f8f8f8;
 	}
+
 	p {
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 20px;
@@ -704,7 +800,8 @@ section.form {
 		padding-bottom: 12px;
 		color: #f8f8f8;
 	}
-	form input{
+
+	form input {
 		width: 312px;
 		min-height: 40px;
 		max-height: 40px;
@@ -715,11 +812,14 @@ section.form {
 		border-radius: 4px;
 		color: #252323;
 		height: 40px;
-			&:focus, &:hover{
-				border: 2px solid #252323;
-				background-color: #fefefe;
+
+		&:focus,
+		&:hover {
+			border: 2px solid #252323;
+			background-color: #fefefe;
 		}
 	}
+
 	form button {
 		font-family: Helvetica, Arial, sans-serif;
 		font-size: 16px;
@@ -730,13 +830,352 @@ section.form {
 		max-height: 40px;
 		border: 2px solid transparent;
 		border-radius: 4px;
-  		color: #f8f8f8;
-  		padding: 8px 16px;
-  		text-decoration: none;
-  		cursor: pointer;
+		color: #f8f8f8;
+		padding: 8px 16px;
+		text-decoration: none;
+		cursor: pointer;
 		height: 40px;
 	}
+
 	.mail {
 		display: flex;
+	}
+}
+
+/*? ; -------------------------------------- MEDIA QUERIES --------------------------------- ----- */
+/*? ; -------------------------------------- RESPONSIVE --------------------------------- ----- */
+
+@mixin hero-contact-styles($h1-size, $h2-size, $line-height-h2) {
+	section.hero-contact {
+		padding: 64px 20px 64px 24px;
+		min-height: 100vh;
+
+		h1 {
+			font-size: $h1-size;
+			line-height: 1;
+		}
+
+		h2 {
+			font-size: $h2-size;
+			line-height: $line-height-h2;
+		}
+	}
+}
+
+section.form {
+	padding: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+		width: 312px;
+	}
+
+	@media (max-width: 600px) {
+		padding: 64px 20px;
+
+		h2 {
+			font-size: 24px;
+		}
+
+		form {
+			width: 100%;
+
+			input {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@mixin best-sellers {
+	section.best-sellers {
+		padding: 64px 16px;
+
+		h2 {
+			font-size: 28px;
+			padding: 0 0 8px 0;
+		}
+
+		h3 {
+			font-size: 24px;
+			padding: 0 0 32px 0;
+		}
+
+		img {
+			margin: 0 0 24px 0;
+		}
+
+		div.top {
+			padding: 0 0 8px 0;
+		}
+	}
+}
+
+@mixin p-boxes-styles($font-size, $padding) {
+	div.p-boxes p {
+		font-size: $font-size;
+		padding: $padding;
+	}
+}
+
+/*? ; -------------------------------------- MAX WIDTH 600PX --------------------------------- ----- */
+
+@media (max-width: 600px) {
+	header {
+		flex-direction: column;
+		padding: 16px;
+		max-height: 70px;
+		overflow: hidden;
+		transition: max-height .5s ease-in-out;
+	}
+
+	section.hero {
+		min-height: 100vh;
+
+		h1 {
+			font-size: 38px;
+			padding: 0;
+		}
+
+		svg {
+			height: 240px;
+			margin: 0 0 40px 0;
+		}
+
+		div.main-container {
+			padding: 0;
+		}
+	}
+
+	header ul li.svg-logo {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header .nav-container {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	header .link {
+		font-size: 14px;
+	}
+
+	section.intro h2 {
+		font-size: 32px;
+		line-height: 1;
+		padding: 64px 20px;
+	}
+
+	@include best-sellers();
+
+	section.about {
+		min-height: 0;
+
+		div {
+			padding: 64px 20px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-bottom: 24px;
+			line-height: 1;
+			padding: 0;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 1;
+			padding: 0;
+		}
+	}
+
+	section.cta {
+		padding: 0;
+
+		h2 {
+			font-size: 24px;
+			line-height: 1;
+			padding: 64px 20px 24px 20px;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 1;
+			padding: 16px 20px 32px 20px;
+		}
+
+		ul {
+			padding: 0 0 64px 0;
+			gap: 16px;
+			margin: 0;
+			flex-direction: column;
+			align-items: center;
+
+			li a {
+				width: 100%;
+				padding: 12px 20px;
+			}
+		}
+	}
+
+	section.reach-out {
+		div.p-boxes {
+			display: block;
+			width: 100%;
+
+			@include p-boxes-styles(20px, 40px);
+
+			p.dietary,
+			p.party,
+			p.flavour,
+			p.hi {
+				font-size: 20px;
+				padding: 32px;
+			}
+		}
+
+		h2 {
+			font-size: 24px;
+			padding: 64px 20px;
+		}
+	}
+
+	section.menu {
+		h1 {
+			font-size: 32px;
+			padding: 152px 40px 64px 40px;
+		}
+	}
+
+	footer {
+		padding: 40px 20px;
+
+		ul.internal-container,
+		ul.external-container {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+		}
+
+		div.credits {
+			flex-direction: column;
+			padding-top: 20px;
+			text-align: center;
+
+			p {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+}
+
+/*? ; -------------------------------------- WIDTH BETWEEN 601 A 992 PX --------------------------------- ----- */
+
+@media (min-width: 601px) and (max-width: 992px) {
+	header {
+		padding: 24px;
+	}
+
+	@include hero-contact-styles(32px, 28px, 36px);
+
+	section.reach-out {
+		div.p-boxes {
+			p {
+				padding: 30px;
+				font-size: 20px;
+			}
+		}
+	}
+
+	section.info {
+		p {
+			font-size: 28px;
+			line-height: 36px;
+		}
+
+		a.stroke {
+			width: 100%;
+			padding: 8px 30px;
+			font-size: 22px;
+		}
+	}
+
+	footer {
+		padding: 80px;
+
+		ul.internal-container,
+		ul.external-container {
+			gap: 15px;
+		}
+
+		div.credits {
+			padding-top: 80px;
+			text-align: center;
+		}
+	}
+}
+
+// ABOUT RESPONSIVE
+@media (max-width: 768px) {
+	header .svg-logo {
+		text-align: center;
+	}
+
+	header .link {
+		font-size: 14px;
+		padding: 10px 0;
+	}
+
+	section.hero {
+		padding: 170px 16px 32px 16px;
+
+		ul {
+			padding-left: 0;
+		}
+	}
+
+	a.outline,
+	a.stroke {
+		max-width: 242px;
+		min-width: 242px;
+		margin: 0 auto;
+	}
+
+	section.find-us div.stores img {
+		height: auto;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+
+	section.find-us {
+		padding: 32px 20px;
+
+		div.stores {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		h2,
+		p {
+			font-size: 24px;
+			padding: 0 0 32px 0;
+			line-height: 1;
+		}
+	}
+
+	section.cta ul li a {
+		width: 100%;
+		padding: 12px 20px;
 	}
 }
