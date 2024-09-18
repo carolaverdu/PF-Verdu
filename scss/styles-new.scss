@@ -683,3 +683,60 @@ div {
 		margin-right: auto;
 	}
 }
+
+section.form {
+	background-color: #E30E5C;
+	padding: 80px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	h2 {
+		font-family: 'PPMonumentExtended';
+		font-size: 32px;
+		line-height: 1;
+		padding-bottom: 32px;
+		color: #f8f8f8;
+	}
+	p {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		line-height: 1;
+		padding-bottom: 12px;
+		color: #f8f8f8;
+	}
+	form input{
+		width: 312px;
+		min-height: 40px;
+		max-height: 40px;
+		padding: 8px 16px;
+		margin-right: 4px;
+		border: 2px solid transparent;
+		background-color: #f8f8f8;
+		border-radius: 4px;
+		color: #252323;
+		height: 40px;
+			&:focus, &:hover{
+				border: 2px solid #252323;
+				background-color: #fefefe;
+		}
+	}
+	form button {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		background-color: #252323;
+		margin-right: 4px;
+		min-height: 40px;
+		max-height: 40px;
+		border: 2px solid transparent;
+		border-radius: 4px;
+  		color: #f8f8f8;
+  		padding: 8px 16px;
+  		text-decoration: none;
+  		cursor: pointer;
+		height: 40px;
+	}
+	.mail {
+		display: flex;
+	}
+}

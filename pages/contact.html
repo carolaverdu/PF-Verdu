@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact us for special orders, large party menus, and more. Whether you need customized dishes or catering for events, we're here to assist with all your needs. Get in touch with our restaurant to make your occasion unforgettable.">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styles-new.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contact</title>
 </head>
 <body>
@@ -72,18 +72,19 @@
                 Get in touch and let's noodle on life together. Who knows? Your next message might inspire our next great dish!</p>
             <a href="https://wa.me/541122694929" class="stroke">CHAT WITH US</a>
         </section>
-    </main>
 
-    <!-- ? ---------- FORM ---------- -->
-     <form class="">
-        <label for="name">Name</label>
-        <input type="text" required name="name">
-        <label for="order">Order</label>
-        <input type="text" required name="order">
-        <label for="phone">Phone Number</label>
-        <input type="tel" required name="phone">
-        <button type="submit">Enviar</button>
-     </form>
+        <!-- ? ---------- FORM ---------- -->
+        <section class="form">
+            <h2>GET 20% OFF NOW</h2>
+            <p>Complete with your email and join the club</p>
+
+            <form class="mail">
+                <input type="text" required name="mail" id="input">
+                <button type="submit" onclick="event.preventDefault(); document.getElementById('input').value = ''">REGISTER</button>
+            </form>
+        </section>
+        
+    </main>
 
         <!-- ? ---------- FOOTER ---------- -->
     <footer>
